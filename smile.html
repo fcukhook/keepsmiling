@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Message</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #ffeb3b, #8bc34a);
+            color: transparent;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 span {
+            display: inline-block;
+            font-size: 4vw;
+            margin: 0;
+            padding: 2vw;
+            animation: fly-in 1.5s ease-out forwards;
+            color: purple; /* Change text color to purple */
+        }
+
+        /* Set different animation directions for each word */
+        h1 span:nth-child(1) { animation-delay: 0.2s; animation-name: fly-in-left; }
+        h1 span:nth-child(2) { animation-delay: 0.4s; animation-name: fly-in-right; }
+        h1 span:nth-child(3) { animation-delay: 0.6s; animation-name: fly-in-top; }
+        h1 span:nth-child(4) { animation-delay: 0.8s; animation-name: fly-in-left; }
+        h1 span:nth-child(5) { animation-delay: 1.0s; animation-name: fly-in-right; }
+        h1 span:nth-child(6) { animation-delay: 1.2s; animation-name: fly-in-top; }
+        h1 span:nth-child(7) { animation-delay: 1.4s; animation-name: fly-in-left; }
+        h1 span:nth-child(8) { animation-delay: 1.6s; animation-name: fly-in-right; }
+        h1 span:nth-child(9) { animation-delay: 1.8s; animation-name: fly-in-top; }
+        h1 span:nth-child(10) { animation-delay: 2.0s; animation-name: fly-in-left; }
+        h1 span:nth-child(11) { animation-delay: 2.2s; animation-name: fly-in-right; }
+        h1 span:nth-child(12) { animation-delay: 2.4s; animation-name: fly-in-top; }
+        h1 span:nth-child(13) { animation-delay: 2.6s; animation-name: fly-in-left; }
+        h1 span:nth-child(14) { animation-delay: 2.8s; animation-name: fly-in-right; }
+        h1 span:nth-child(15) { animation-delay: 3.0s; animation-name: fly-in-top; }
+        h1 span:nth-child(16) { animation-delay: 3.2s; animation-name: fly-in-left; }
+        h1 span:nth-child(17) { animation-delay: 3.4s; animation-name: fly-in-right; }
+        h1 span:nth-child(18) { animation-delay: 3.6s; animation-name: fly-in-top; }
+        h1 span:nth-child(19) { animation-delay: 3.8s; animation-name: fly-in-left; }
+        h1 span:nth-child(20) { animation-delay: 4.0s; animation-name: fly-in-right; }
+        h1 span:nth-child(21) { animation-delay: 4.2s; animation-name: fly-in-top; }
+        h1 span:nth-child(22) { animation-delay: 4.4s; animation-name: fly-in-left; }
+        h1 span:nth-child(23) { animation-delay: 4.6s; animation-name: fly-in-right; }
+        h1 span:nth-child(24) { animation-delay: 4.8s; animation-name: fly-in-top; }
+        h1 span:nth-child(25) { animation-delay: 5.0s; animation-name: fly-in-left; }
+        h1 span:nth-child(26) { animation-delay: 5.2s; animation-name: fly-in-right; }
+        h1 span:nth-child(27) { animation-delay: 5.4s; animation-name: fly-in-top; }
+        h1 span:nth-child(28) { animation-delay: 5.6s; animation-name: fly-in-left; }
+        h1 span:nth-child(29) { animation-delay: 5.8s; animation-name: fly-in-right; }
+        h1 span:nth-child(30) { animation-delay: 6.0s; animation-name: fly-in-top; }
+        h1 span:nth-child(31) { animation-delay: 6.2s; animation-name: fly-in-left; }
+        h1 span:nth-child(32) { animation-delay: 6.4s; animation-name: fly-in-right; }
+        h1 span:nth-child(33) { animation-delay: 6.6s; animation-name: fly-in-top; }
+        h1 span:nth-child(34) { animation-delay: 6.8s; animation-name: fly-in-left; }
+        h1 span:nth-child(35) { animation-delay: 7.0s; animation-name: fly-in-right; }
+        h1 span:nth-child(36) { animation-delay: 7.2s; animation-name: fly-in-top; }
+        h1 span:nth-child(37) { animation-delay: 7.4s; animation-name: fly-in-left; }
+        h1 span:nth-child(38) { animation-delay: 7.6s; animation-name: fly-in-right; }
+        h1 span:nth-child(39) { animation-delay: 7.8s; animation-name: fly-in-top; }
+        h1 span:nth-child(40) { animation-delay: 8.0s; animation-name: fly-in-left; }
+        h1 span:nth-child(41) { animation-delay: 8.2s; animation-name: fly-in-right; }
+        h1 span:nth-child(42) { animation-delay: 8.4s; animation-name: fly-in-top; }
+        /* Add more lines for additional words */
+
+        @keyframes fly-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+                color: purple;
+            }
+        }
+
+        @keyframes fly-in-left {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+                color: purple;
+            }
+        }
+
+        @keyframes fly
+
+-in-right {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+                color: purple;
+            }
+        }
+
+        @keyframes fly-in-top {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+                color: purple;
+            }
+        }
+
+        /* Style for the Next button */
+        .next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <span>endk</span>
+            <span>ante...</span>
+            <span>nrmlagne</span>
+            <span>,</span>
+            <span>exams</span>
+            <span>kada..</span>
+            <span>koncham</span>
+            <span>chill</span>
+            <span>avvadaniki</span>
+            <span>antey</span>
+        </h1>
+        <!-- Next button with a link to bye.html -->
+        <a href="bye.html" class="next-button">Next</a>
+    </div>
+</body>
+</html>
